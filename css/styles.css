@@ -1,0 +1,274 @@
+body {
+    background: rgb(253, 29, 29);
+    background: linear-gradient(90deg, rgba(253, 29, 29, 1) 52%, rgba(252, 176, 69, 1) 100%);
+}
+
+h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4em;
+    text-align: center;
+    margin-bottom: 0px;
+    color: white;
+}
+
+a {
+    text-decoration: none; /* Elimina el subrayado de todos los enlaces */
+}
+
+.tex {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    font-size: 2em;
+    padding: 0 20px;
+}
+
+.tex2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    font-size: 1em;
+    padding: 10 20px;
+}
+
+.pokemon-card {
+    width: 25%;
+    min-width: 200px;
+    max-width: 300px;
+    height: 460px;
+    background-color: rgb(236, 236, 236);
+    margin: 1%;
+    display: inline-block;
+    border-radius: 0.5em;
+    text-align: center;
+    vertical-align: top;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.pokemon-card, .trainer-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pokemon-card:hover, .trainer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.pokemon-name {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2em;
+    margin-top: 20px;
+    margin-bottom: 0px;
+
+}
+
+.pokemon-link {
+    color: black;
+    text-decoration: none;
+}
+
+.pokemon-id {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.pokemon-image img {
+    width: 90%;
+    height: auto;
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .pokemon-card {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .pokemon-card {
+        width: 100%;
+    }
+}
+
+.trainer-card {
+    width: 25%;
+    min-width: 200px;
+    max-width: 300px;
+    height: auto;
+    background-color: rgb(236, 236, 236);
+    margin: 1%;
+    display: inline-block;
+    border-radius: 0.5em;
+    text-align: center;
+    vertical-align: top;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.trainer-name,
+.trainer-age,
+.trainer-region {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 2em;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.trainer-pokemon {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+select {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    font-size: 1em;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 10 20px;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.pokemon-type {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.bug-type {
+    background-color: #A8B820;
+    color: #fff;
+}
+
+.dark-type {
+    background-color: #705848;
+    color: #fff;
+}
+
+.dragon-type {
+    background-color: #7038F8;
+    color: #fff;
+}
+
+.electric-type {
+    background-color: #F8D030;
+    color: #fff;
+}
+
+.fairy-type {
+    background-color: #EE99AC;
+    color: #fff;
+}
+
+.fighting-type {
+    background-color: #C03028;
+    color: #fff;
+}
+
+.fire-type {
+    background-color: #F08030;
+    color: #fff;
+}
+
+.flying-type {
+    background-color: #A890F0;
+    color: #fff;
+}
+
+.ghost-type {
+    background-color: #705898;
+    color: #fff;
+}
+
+.grass-type {
+    background-color: #78C850;
+    color: #fff;
+}
+
+.ground-type {
+    background-color: #E0C068;
+    color: #fff;
+}
+
+.ice-type {
+    background-color: #98D8D8;
+    color: #000;
+}
+
+.normal-type {
+    background-color: #A8A878;
+    color: #fff;
+}
+
+.poison-type {
+    background-color: #A040A0;
+    color: #fff;
+}
+
+.psychic-type {
+    background-color: #F85888;
+    color: #fff;
+}
+
+.rock-type {
+    background-color: #B8A038;
+    color: #fff;
+}
+
+.steel-type {
+    background-color: #B8B8D0;
+    color: #fff;
+}
+
+.water-type {
+    background-color: #6890F0;
+    color: #fff;
+}
